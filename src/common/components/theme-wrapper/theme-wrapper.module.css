@@ -1,0 +1,69 @@
+.light {
+    --clr-primary: #3a86ff;
+    --clr-primary-rgb: 58, 134, 255;
+    --clr-background: #ffffff;
+    --clr-grey: #6d6d6d;
+    --clr-grey-rgb: 109, 109, 109;
+    --clr-text: #000000;
+    --clr-primary-filter: brightness(0) saturate(100%) invert(44%) sepia(36%) saturate(3400%) hue-rotate(202deg) brightness(100%) contrast(102%);
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root,
+    .dark {
+        --clr-primary: #e8fb70;
+        --clr-primary-rgb: 232, 251, 112;
+        --clr-background: #282c34;
+        --clr-grey: #474749;
+        --clr-grey-rgb: 71, 71, 73;
+        --clr-text: #dbdbdb;
+        --clr-primary-filter: brightness(0) saturate(100%) invert(99%) sepia(75%) saturate(1153%) hue-rotate(12deg) brightness(104%) contrast(97%);
+    }
+}
+
+.toogleTheme {
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    top: 16px;
+    width: 30px;
+    cursor: pointer;
+}
+
+@media (width > 1440px) {
+    .toogleTheme {
+        right: 8vi;
+    }
+}
+
+@media (width > 2000px) {
+    .toogleTheme {
+        right: 12vi;
+    }
+}
+
+mark {
+    background-color: var(--clr-primary);
+}
+
+.light mark {
+    color: white;
+}
+
+a {
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+pre {
+    background-color: rgba(var(--clr-grey-rgb), 0.4);
+    color: #757575;
+    overflow-x: auto;
+    padding: 8px 16px;
+}
+
+.light pre {
+    background-color: rgba(var(--clr-grey-rgb), 0.1);
+}

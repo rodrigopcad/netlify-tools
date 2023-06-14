@@ -1,0 +1,10 @@
+{
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+}

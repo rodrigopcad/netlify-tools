@@ -1,0 +1,24 @@
+.container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.loader {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 6px solid rgba(var(--clr-grey-rgb), 0.2);
+    border-top-color: var(--clr-primary);
+    animation: spin 1s ease-out infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

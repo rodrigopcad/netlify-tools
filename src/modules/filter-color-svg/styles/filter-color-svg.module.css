@@ -1,0 +1,22 @@
+.container {
+    width: 80vw;
+    max-width: 1024px;
+}
+
+.placeHorizontal {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: end;
+    margin-bottom: 16px;
+}
+
+.colorBox {
+    --size: 50px;
+    width: var(--size);
+    height: var(--size);
+}
+
+.bgBlack {
+    background-color: #000000;
+}

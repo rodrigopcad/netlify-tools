@@ -1,0 +1,22 @@
+.container {
+    max-width: 70vw;
+}
+
+.item {
+    margin-bottom: 24px;
+    padding-inline: 16px;
+    border: 1px solid var(--clr-grey);
+    border-radius: 16px;
+    width: 100%;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.searchbar {
+    width: 100%;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: auto max-content;
+    align-items: center;
+    gap: 16px;
+}
